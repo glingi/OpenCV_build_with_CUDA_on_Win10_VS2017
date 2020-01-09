@@ -16,3 +16,24 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime_ap
 c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h
 ```
 Reference : https://lucetewoo.tistory.com/15
+
+- Set several CMake options
+
+```
+WITH_CUDA : ON
+WITH_TBB : ON
+WITH_EIGEN : ON
+
+CUDA_ARCH_BIN : 6.1 
+
+CUDA_HOST_COMPILER : C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe
+
+TBB_DIR : <your_tbb_folder>/tbb/cmake
+TBB_ENV_INCLUDE : <your_tbb_folder>/tbb/include/tbb
+TBB_ENV_LIB : <your_tbb_folder>/tbb/lib/intel64/vc14/tbb.lib
+TBB_ENV_LIB_DEBUG : <your_tbb_folder>/tbb/lib/intel64/vc14/tbb_debug.lib
+
+BUILD_opencv_world : ON
+OPENCV_EXTRA_MODULES_PATH : <your_opencv_contrib_path>/modules
+
+```
