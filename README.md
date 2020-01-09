@@ -1,5 +1,6 @@
 # OpenCV_build_with_CUDA_on_Win10_VS2017
 
+- with : eigen v3.3.7, tbb, cuda v10.2
 
 - Set proper CUDA_ARCH_BIN flag in CMAKE according to https://developer.nvidia.com/cuda-gpus
 ```
