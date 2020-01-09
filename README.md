@@ -2,7 +2,7 @@
 
 - with : eigen v3.3.7, tbb, cuda v10.2
 
-- Download a pair of opencv and opencv_contrib. version should be matched.
+- Download a pair of opencv and opencv_contrib. Version should be matched.
 
 - Set proper CUDA_ARCH_BIN flag in CMAKE according to https://developer.nvidia.com/cuda-gpus
 ```
