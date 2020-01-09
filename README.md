@@ -2,6 +2,9 @@
 
 - with : eigen v3.3.7, tbb, cuda v10.2
 
+- tbb v2020 only support Visual Studio 2017(vc14)
+- tbb v2017 supports Visual Studio 2013, 2015, 2017
+
 - Download a pair of opencv and opencv_contrib. Version should be matched.
 
 - Set proper CUDA_ARCH_BIN flag in CMAKE according to https://developer.nvidia.com/cuda-gpus
@@ -14,6 +17,7 @@ CUDA_ARCH_BIN 6.1 for GTX 1050 notebook
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime_api.h
 c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda.h
 ```
 Reference : https://lucetewoo.tistory.com/15
 
