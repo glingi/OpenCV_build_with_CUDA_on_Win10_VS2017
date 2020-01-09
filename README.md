@@ -38,6 +38,7 @@ TBB_ENV_LIB_DEBUG : <your_tbb_folder>/tbb/lib/intel64/vc14/tbb_debug.lib
 
 BUILD_opencv_world : ON
 OPENCV_EXTRA_MODULES_PATH : <your_opencv_contrib_path>/modules
+OPENCV_ENABLE_NONFREE : ON
 
 ```
 
