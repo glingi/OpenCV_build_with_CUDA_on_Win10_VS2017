@@ -152,3 +152,9 @@ OPENCV_ENABLE_NONFREE : ON
 
   Install to:                    C:/opencv-4.1.1/install
   ```
+
+
+# stitching_detailed.cpp with CUDA
+
+https://answers.opencv.org/question/95148/cudalegacy-not-compile-nppigraphcut-missing/
+
