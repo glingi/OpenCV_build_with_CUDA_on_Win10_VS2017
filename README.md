@@ -2,7 +2,8 @@
 
 - with : eigen v3.3.7, tbb, cuda v10.2
 
-- tbb v2020 only support Visual Studio 2017(vc14)
+- Download tbb :
+https://github.com/intel/tbb/releases
 
 - Download a pair of opencv and opencv_contrib. Version should be matched.
 
