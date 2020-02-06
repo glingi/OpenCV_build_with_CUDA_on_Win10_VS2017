@@ -46,6 +46,13 @@ BUILD_PERF_TEST : OFF
 BUILD_PACKAGE : OFF
 ```
 
+- NVIDIA Video Codec SDK 2.1
+developer.nvidia.com/nvidia-video-codec-sdk/download#NVDECFeatures
+
+```
+CUDA_nvcuvid_LIBRARY : <install path>Lib/x64/nvcuvid.lib
+```
+
 - General configuration for OpenCV 4.1.1
 
 ```
