@@ -40,10 +40,12 @@ TBB_ENV_LIB_DEBUG : <your_tbb_folder>/tbb/lib/intel64/vc14/tbb_debug.lib
 BUILD_opencv_world : ON
 OPENCV_EXTRA_MODULES_PATH : <your_opencv_contrib_path>/modules
 OPENCV_ENABLE_NONFREE : ON
+OPENCV_GENERATE_PKGCONFIG : ON
 ENABLE_FAST_MATH : ON
 BUILD_TEST : OFF
 BUILD_PERF_TEST : OFF
 BUILD_PACKAGE : OFF
+
 
 WITH_1394 : OFF
 
