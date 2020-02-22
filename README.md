@@ -37,7 +37,7 @@ BUILD_opencv_world : ON
 BUILD_TEST : OFF
 BUILD_PERF_TEST : OFF
 BUILD_PACKAGE : OFF
-
+BUILD_opencv_cudacodec : OFF (CUDA 10 and OpenCV 3.4.2)
 
 WITH_1394 : OFF
 
