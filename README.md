@@ -48,7 +48,7 @@ WITH_1394 : OFF
 CUDA_ARCH_BIN : 6.1 
 ```
 
-- TBB optins
+- TBB options
 
 ```
 TBB_DIR : <your_tbb_folder>/tbb/cmake
