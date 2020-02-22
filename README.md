@@ -39,7 +39,7 @@ WITH_1394 : OFF
 - CUDA options 
   + Check CUDA_ARCH_BIN in CMAKE here : https://developer.nvidia.com/cuda-gpus
 ```
-CUDA_ARCH_BIN : 6.1 // for GTX 1050 notebook / GTX 1080 Ti
+CUDA_ARCH_BIN : 6.1 (for GTX 1050 notebook / GTX 1080 Ti / MX150)
 ```
 
 - TBB options
