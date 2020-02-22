@@ -1,4 +1,4 @@
-# OpenCV_build_with_CUDA_on_Win10_VS2017
+# OpenCV_build_with_CUDA_on_Ubuntu_18.04
 
 - Download
   + CMake : https://cmake.org/download/
