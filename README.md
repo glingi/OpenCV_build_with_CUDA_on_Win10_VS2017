@@ -2,8 +2,8 @@
 
 - with : tbb, cuda
 
-- Download tbb :
-https://github.com/intel/tbb/releases
+- Download
+  + tbb : https://github.com/intel/tbb/releases
 
 - Download a pair of opencv and opencv_contrib. Version should be matched.
 
