@@ -11,6 +11,7 @@
  
 - Intall GTK (Only Ubuntu)
 ```
+$ sudo apt-get install ffmpeg
 $ sudo apt-get install libgtk2.0-dev
 $ sudo apt-get install libavcodec-dev libavformat-dev libavdevice-dev
 ```
