@@ -11,7 +11,8 @@
  
 - Intall GTK (Only Ubuntu)
 ```
-$ apt-get install libgtk2.0-dev
+$ sudo apt-get install libgtk2.0-dev
+$ sudo apt-get install libavcodec-dev libavformat-dev libavdevice-dev
 ```
 
 - Set CMake options
