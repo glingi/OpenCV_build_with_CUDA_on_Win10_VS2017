@@ -1,5 +1,7 @@
 # OpenCV_build_with_CUDA_on_Ubuntu_18.04
 
+- CUDA installation : https://docs.nvidia.com/cuda/archive/10.0/cuda-installation-guide-linux/index.html
+
 - Download
   + CMake : https://cmake.org/download/
   + Note ! : a pair of opencv and opencv_contrib version should be matched
