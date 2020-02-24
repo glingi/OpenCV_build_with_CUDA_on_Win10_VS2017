@@ -23,6 +23,7 @@ $ sudo apt-get install libavcodec-dev libavformat-dev libavdevice-dev
 ```
 WITH_CUDA : ON
 WITH_TBB : ON
+WITH_FFMPEG : OFF (for Ubuntu)
 
 OPENCV_EXTRA_MODULES_PATH : <your_opencv_contrib_path>/modules
 OPENCV_ENABLE_NONFREE : ON
