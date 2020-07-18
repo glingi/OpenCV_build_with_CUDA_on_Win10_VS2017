@@ -73,7 +73,30 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda_runtime_ap
 c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda.h
 ```
+# Using CUDACODEC VIDEOREADER
 
+OpenCV 4.x version basically does not support udacodec::VideoReader function. Additional steps is required to use udacodec [1].
+
+1. Download NVIDIA VIDEO CODEC SDK below
+https://developer.nvidia.com/nvidia-video-codec-sdk
+
+2. After extracing zip file, copy all header files in the interface folder into both 1) /usr/local/cuda/include and 2) /usr/local/cuda-10.0/include 
+
+3. Check system architecture
+```
+$ uname -a
+Linux username 5.3.0-62-generic #56~18.04.1-Ubuntu SMP Wed Jun 24 16:17:03 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+```
+4. Copy all lib files in the paht <video_codec_sdk>/Lib/linux/stubs/<architecture> into 1) /usr/local/cuda/lib64 2) /usr/local/cuda-10.0/lib64
+
+5. In CMake, set WITH_NVCUVID = ON 
+
+6. build OpenCV4
+
+7. Run source code : https://github.com/opencv/opencv/blob/master/samples/gpu/video_reader.cpp
+
+Refereces
+[1] https://jamesbowley.co.uk/accelerate-opencv-4-2-0-build-with-cuda-and-python-bindings/
 
 # stitching_detailed.cpp with CUDA
 
