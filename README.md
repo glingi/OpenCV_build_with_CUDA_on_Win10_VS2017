@@ -23,7 +23,7 @@ $ sudo apt-get install libavcodec-dev libavformat-dev libavdevice-dev
 ```
 WITH_CUDA : ON
 WITH_TBB : ON
-WITH_FFMPEG : OFF (for Ubuntu)
+WITH_FFMPEG : ON
 
 OPENCV_EXTRA_MODULES_PATH : <your_opencv_contrib_path>/modules
 OPENCV_ENABLE_NONFREE : ON
@@ -35,7 +35,7 @@ BUILD_opencv_world : ON
 BUILD_TEST : OFF
 BUILD_PERF_TEST : OFF
 BUILD_PACKAGE : OFF
-BUILD_opencv_cudacodec : OFF (for CUDA 10 and OpenCV 3.4.2)
+BUILD_opencv_cudacodec : ON (NVIDIA VIDEO CODEC SDK is requried)
 
 WITH_1394 : OFF
 
@@ -56,15 +56,6 @@ TBB_ENV_LIB : <your_tbb_folder>/tbb/lib/intel64/vc14/tbb.lib
 TBB_ENV_LIB_DEBUG : <your_tbb_folder>/tbb/lib/intel64/vc14/tbb_debug.lib
 ```
 
-- (Options) NVIDIA Video Codec SDK 2.1
-developer.nvidia.com/nvidia-video-codec-sdk/download#NVDECFeatures
-
-```
-CUDA_nvcuvid_LIBRARY : <install path>Lib/x64/nvcuvid.lib
-```
-
-
-
 - (Options) Save cuda_runtime.h file as "UNICODE - CODE PAGE 1200" to remove "warning C4819" in VS2017
   + Reference : https://lucetewoo.tistory.com/15
 ```
@@ -79,18 +70,18 @@ OpenCV 4.x version basically does not support udacodec::VideoReader function. Ad
 
 1. Download NVIDIA VIDEO CODEC SDK : https://developer.nvidia.com/nvidia-video-codec-sdk
 
-2. After extracing zip file, copy all header files in the interface folder into both 1) /usr/local/cuda/include and 2) /usr/local/cuda-10.0/include 
+2. After extracing zip file, copy all header files in <video_codec_sdk>/interface into both   1) /usr/local/cuda/include   and   2) /usr/local/cuda-10.0/include 
 
 3. Check the system architecture
 ```
 $ uname -a
 Linux username 5.3.0-62-generic #56~18.04.1-Ubuntu SMP Wed Jun 24 16:17:03 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ```
-4. Copy all lib files in the paht <video_codec_sdk>/Lib/linux/stubs/<architecture> into 1) /usr/local/cuda/lib64 2) /usr/local/cuda-10.0/lib64
+4. Copy all library files in <video_codec_sdk>/Lib/linux/stubs/<architecture>  into both   1) /usr/local/cuda/lib64   and   2) /usr/local/cuda-10.0/lib64
 
 5. In CMake, set WITH_NVCUVID = ON 
 
-6. build OpenCV4
+6. Build OpenCV
 
 7. Run source code : https://github.com/opencv/opencv/blob/master/samples/gpu/video_reader.cpp
 
