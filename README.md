@@ -77,12 +77,11 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\cuda.h
 
 OpenCV 4.x version basically does not support udacodec::VideoReader function. Additional steps are required to use cudacodec [1].
 
-1. Download NVIDIA VIDEO CODEC SDK below
-https://developer.nvidia.com/nvidia-video-codec-sdk
+1. Download NVIDIA VIDEO CODEC SDK : https://developer.nvidia.com/nvidia-video-codec-sdk
 
 2. After extracing zip file, copy all header files in the interface folder into both 1) /usr/local/cuda/include and 2) /usr/local/cuda-10.0/include 
 
-3. Check system architecture
+3. Check the system architecture
 ```
 $ uname -a
 Linux username 5.3.0-62-generic #56~18.04.1-Ubuntu SMP Wed Jun 24 16:17:03 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
