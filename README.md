@@ -84,6 +84,11 @@ Linux username 5.3.0-62-generic #56~18.04.1-Ubuntu SMP Wed Jun 24 16:17:03 UTC 2
 6. Build OpenCV
 
 7. Run source code : https://github.com/opencv/opencv/blob/master/samples/gpu/video_reader.cpp
+```
+Results:
+CPU : Avg : 2.76995 ms FPS : 361.017 Frames 987
+GPU : Avg : 0.312265 ms FPS : 3202.41 Frames 995
+```
 
 Refereces
 [1] https://jamesbowley.co.uk/accelerate-opencv-4-2-0-build-with-cuda-and-python-bindings/
