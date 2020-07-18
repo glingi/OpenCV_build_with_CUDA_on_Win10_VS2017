@@ -77,7 +77,7 @@ OpenCV 4.x version basically does not support udacodec::VideoReader function. Ad
 $ uname -a
 Linux username 5.3.0-62-generic #56~18.04.1-Ubuntu SMP Wed Jun 24 16:17:03 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ```
-4. Copy all library files in <video_codec_sdk>/Lib/linux/stubs/<architecture>  into both   1) /usr/local/cuda/lib64   and   2) /usr/local/cuda-10.0/lib64
+4. Copy all library files in <video_codec_sdk>/Lib/linux/stubs/(architecture)  into both   1) /usr/local/cuda/lib64   and   2) /usr/local/cuda-10.0/lib64
 
 5. In CMake, set WITH_NVCUVID = ON 
 
