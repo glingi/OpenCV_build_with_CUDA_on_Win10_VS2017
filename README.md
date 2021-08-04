@@ -10,6 +10,7 @@
   + CUDA (login needed) : https://developer.nvidia.com/cuda-toolkit-archive
   + CUDNN (login needed) : https://developer.nvidia.com/rdp/cudnn-archive
   + TBB : https://github.com/intel/tbb/releases
+  + EIGEN : https://eigen.tuxfamily.org/index.php?title=Main_Page
  
 - Intall GTK (Only Ubuntu)
 ```
@@ -24,10 +25,13 @@ $ sudo apt-get install libavcodec-dev libavformat-dev libavdevice-dev
 WITH_CUDA : ON
 WITH_TBB : ON
 WITH_FFMPEG : ON
+WITE_EIGEN : ON
 
 OPENCV_EXTRA_MODULES_PATH : <your_opencv_contrib_path>/modules
 OPENCV_ENABLE_NONFREE : ON
 OPENCV_GENERATE_PKGCONFIG : ON
+
+EIGEN_INCLUDE_PATH : <your_eigen_path>
 
 ENABLE_FAST_MATH : ON
 
@@ -44,7 +48,7 @@ WITH_1394 : OFF
 - CUDA options 
   + Check CUDA_ARCH_BIN in CMAKE here : https://developer.nvidia.com/cuda-gpus
 ```
-CUDA_ARCH_BIN : 6.1 (for GTX 1050 notebook / GTX 1080 Ti / MX150)
+CUDA_ARCH_BIN : 6.1 (for GTX 1050 laptop / GTX 1080 Ti / MX150)
 ```
 
 - TBB options
