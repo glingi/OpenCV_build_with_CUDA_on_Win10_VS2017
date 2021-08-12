@@ -12,11 +12,19 @@
   + TBB : https://github.com/intel/tbb/releases
   + EIGEN : https://eigen.tuxfamily.org/index.php?title=Main_Page
  
-- Intall GTK (Only Ubuntu)
+- Intall required packages (Only Ubuntu)
 ```
-$ sudo apt-get install ffmpeg
-$ sudo apt-get install libgtk2.0-dev
-$ sudo apt-get install libavcodec-dev libavformat-dev libavdevice-dev
+$ sudo apt-get install -y \
+ffmpeg \
+libgtk2.0-dev libgtk-3-dev \
+libavcodec-dev libavformat-dev libavutil-dev libavdevice-dev libavresample-dev libswscale-dev \
+gfortran libblas-dev liblapack-dev \
+python3-dev python3-numpy python3-py python3-pytest \
+qt5-default \
+zlib1g-dev \
+libgl1 \
+libglvnd-dev \
+pkg-config
 ```
 
 - Set CMake options
